@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Lato' , sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header-text-box h1 {
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  font-size: 250%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.header-text-box .btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 30px;
+  border: 1px solid #e67e22;
+  border-radius: 200px;
+}
+
+.header-text-box .btn-full {
+  background-color: #e67e22;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.header-text-box .btn-full:hover {
+  background-color: #cf6d17;
+}
+/*# sourceMappingURL=style.css.map */

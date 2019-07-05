@@ -1,0 +1,43 @@
+@import "variable";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Lato' , sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.header-text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    h1{
+        @include h1style;
+        margin-bottom:20px;
+    }
+    .btn{
+        @include btn;
+    }
+    .btn-full{
+        background-color:$orange;
+        transition: background-color 0.2s;
+        &:hover{
+            background-color:#cf6d17;
+        }
+    }
+}

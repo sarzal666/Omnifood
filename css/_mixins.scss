@@ -1,0 +1,18 @@
+// MIXINS
+@mixin h1style {
+    color:white;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+    font: {
+        size: $h1size;
+        weight: 300;
+    }
+}
+@mixin btn {
+        text-decoration: none;
+        color:#fff;
+        padding:10px 30px;
+        border:1px solid $orange;
+        border-radius: 200px;
+}
