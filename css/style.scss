@@ -11,7 +11,7 @@ html {
     background-color: #fff;
     font-size: 20px;
     color: #000;
-    font-family: 'Lato' , sans-serif;
+    font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -21,23 +21,63 @@ header {
     background-position: center;
     height: 100vh;
 }
-.header-text-box{
+
+.header-text-box {
+    width:1140px;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    h1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
         @include h1style;
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
-    .btn{
+
+    .btn {
         @include btn;
     }
-    .btn-full{
-        background-color:$orange;
+
+    .btn-full {
+        background-color: $orange;
         transition: background-color 0.2s;
-        &:hover{
-            background-color:#cf6d17;
+        margin-right: 15px;
+
+        &:hover {
+            background-color: $darkorange;
         }
     }
+
+    .btn-ghost {
+        color: $orange;
+        transition: background-color .2s;
+
+        &:hover {
+            background-color: $darkorange;
+            color: #fff;
+        } 
+    }
+}
+
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+        .logo{
+            height:100px;
+            width:auto;
+            float:left;
+            margin-top:20px;
+        }
+        .main-nav{
+            list-style: none;
+            margin-top: 55px;
+            float: right;
+            li{
+                display: inline-block;
+                margin-left:40px;
+                a{
+                    @include navlinks;
+                }
+            }
+        }
 }

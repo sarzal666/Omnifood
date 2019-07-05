@@ -1,18 +1,33 @@
 // MIXINS
 @mixin h1style {
-    color:white;
+    color: white;
     letter-spacing: 1px;
     word-spacing: 4px;
+    text-transform: uppercase;
 
     font: {
         size: $h1size;
         weight: 300;
     }
 }
+
 @mixin btn {
-        text-decoration: none;
-        color:#fff;
-        padding:10px 30px;
-        border:1px solid $orange;
-        border-radius: 200px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 10px 30px;
+    border: 1px solid $orange;
+    border-radius: 200px;
+}
+@mixin navlinks {
+    text-decoration: none;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding:8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+    &:hover {
+        border-bottom: 2px solid $orange;
+    }
 }
