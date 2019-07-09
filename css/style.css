@@ -108,4 +108,95 @@ header {
 .row .main-nav li a:hover {
   border-bottom: 2px solid #e67e22;
 }
+
+.section-features {
+  padding: 80px 0;
+}
+
+.section-features h2 {
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.section-features h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section-features .icon-big {
+  font-size: 330%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-features h3 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 110%;
+  font-weight: 300;
+}
+
+.section-features .long-copy {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  line-height: 145%;
+}
+
+.section-features .box {
+  text-align: justify;
+  line-height: 145%;
+  font-weight: 300;
+  font-size: 90%;
+}
+
+.section-meals .meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.section-meals .meals-showcase li {
+  width: 25%;
+  float: left;
+}
+
+.section-meals .meals-showcase li .meals-photo {
+  width: 100%;
+  display: block;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.section-meals .meals-showcase li .meals-photo img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.5s , -webkit-transform 0.5s;
+  transition: opacity 0.5s , -webkit-transform 0.5s;
+  transition: transform 0.5s , opacity 0.5s;
+  transition: transform 0.5s , opacity 0.5s , -webkit-transform 0.5s;
+}
+
+.section-meals .meals-showcase li .meals-photo img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */

@@ -23,7 +23,7 @@ header {
 }
 
 .header-text-box {
-    width:1140px;
+    width: 1140px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,29 +55,112 @@ header {
         &:hover {
             background-color: $darkorange;
             color: #fff;
-        } 
+        }
     }
 }
 
-    .row {
-        max-width: 1140px;
-        margin: 0 auto;
-        .logo{
-            height:100px;
-            width:auto;
-            float:left;
-            margin-top:20px;
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    .logo {
+        height: 100px;
+        width: auto;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .main-nav {
+        list-style: none;
+        margin-top: 55px;
+        float: right;
+
+        li {
+            display: inline-block;
+            margin-left: 40px;
+
+            a {
+                @include navlinks;
+            }
         }
-        .main-nav{
-            list-style: none;
-            margin-top: 55px;
-            float: right;
-            li{
-                display: inline-block;
-                margin-left:40px;
-                a{
-                    @include navlinks;
+    }
+}
+
+.section-features {
+    padding: 80px 0;
+
+    h2 {
+        @include h2style;
+
+        &:after {
+            display: block;
+            height: 2px;
+            background-color: #e67e22;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+
+    .icon-big {
+        font-size: 330%;
+        display: block;
+        color: #e67e22;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        @include h3style;
+    }
+
+    .long-copy {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        line-height: 145%;
+    }
+
+    .box {
+        text-align: justify;
+        line-height: 145%;
+
+        font: {
+            weight: 300;
+            size: 90%;
+        }
+
+    }
+
+}
+
+.section-meals {
+
+    .meals-showcase {
+        list-style: none;
+        width: 100%;
+        
+        li {
+            width: 25%;
+            float: left;
+            .meals-photo {
+                width:100%;
+                display: block;
+                background-color: #000;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    transform: scale(1.15);
+                    opacity: 0.7;
+                    transition: transform 0.5s , opacity 0.5s;
+                    &:hover {
+                    transform: scale(1.03);
+                    opacity: 1;
+                    }
                 }
             }
         }
+    }
 }

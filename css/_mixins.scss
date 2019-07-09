@@ -1,4 +1,6 @@
 // MIXINS
+
+//------ headers -----------//
 @mixin h1style {
     color: white;
     letter-spacing: 1px;
@@ -11,6 +13,33 @@
     }
 }
 
+@mixin h2style {
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    font: {
+        size: $h2size;
+        weight: 300;
+    }
+}
+
+@mixin h3style {
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    font: {
+        size: $h3size;
+        weight: 300;
+    }
+
+}
+
 @mixin btn {
     text-decoration: none;
     color: #fff;
@@ -19,14 +48,16 @@
     border: 1px solid $orange;
     border-radius: 200px;
 }
+
 @mixin navlinks {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 300;
-    padding:8px 0;
+    padding: 8px 0;
     border-bottom: 2px solid transparent;
     transition: border-bottom .2s;
+
     &:hover {
         border-bottom: 2px solid $orange;
     }
