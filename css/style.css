@@ -213,7 +213,7 @@ header {
 }
 
 .section-how-it-works {
-  padding-top: 20px;
+  padding: 20px 0;
   background-color: #f4f4f4;
 }
 
@@ -275,5 +275,60 @@ header {
   font-size: 150%;
   float: left;
   margin-right: 25px;
+}
+
+.section-cities {
+  padding: 20px 0;
+}
+
+.section-cities h2 {
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.section-cities h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section-cities .city-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 1%;
+}
+
+.section-cities .city-box h3 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 110%;
+  font-weight: 400;
+}
+
+.section-cities .city-box .city-features {
+  font-weight: 300;
+}
+
+.section-cities .city-box .city-features .icon-small {
+  color: #e67e22;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -8px;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
