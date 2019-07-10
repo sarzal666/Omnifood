@@ -1,3 +1,15 @@
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -137,7 +149,7 @@ header {
   font-size: 330%;
   display: block;
   color: #e67e22;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -148,7 +160,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 110%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .section-features .long-copy {
@@ -188,15 +200,80 @@ header {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   opacity: 0.7;
-  -webkit-transition: opacity 0.5s , -webkit-transform 0.5s;
-  transition: opacity 0.5s , -webkit-transform 0.5s;
-  transition: transform 0.5s , opacity 0.5s;
-  transition: transform 0.5s , opacity 0.5s , -webkit-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .section-meals .meals-showcase li .meals-photo img:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   opacity: 1;
+}
+
+.section-how-it-works {
+  padding-top: 20px;
+  background-color: #f4f4f4;
+}
+
+.section-how-it-works h2 {
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.section-how-it-works h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section-how-it-works .steps-box {
+  float: left;
+  padding: 0 3%;
+}
+
+.section-how-it-works .steps-box .omnifood-app {
+  width: 40%;
+  height: auto;
+  margin-right: 0;
+  float: right;
+}
+
+.section-how-it-works .step-list .work-step {
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.section-how-it-works .step-list .work-step:nth-child(3) {
+  margin-bottom: 80px;
+}
+
+.section-how-it-works .step-list .app-btn img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.section-how-it-works .step-list .point {
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding: 5px;
+  color: #e67e22;
+  font-size: 150%;
+  float: left;
+  margin-right: 25px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,19 @@
 @import "variable";
 @import "mixins";
 
+//---clearfix------//
+.clearfix {
+    zoom: 1;
+
+    &:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -107,7 +120,7 @@ header {
         font-size: 330%;
         display: block;
         color: #e67e22;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -140,27 +153,92 @@ header {
     .meals-showcase {
         list-style: none;
         width: 100%;
-        
+
         li {
             width: 25%;
             float: left;
+
             .meals-photo {
-                width:100%;
+                width: 100%;
                 display: block;
                 background-color: #000;
                 overflow: hidden;
+
                 img {
                     width: 100%;
                     height: auto;
                     transform: scale(1.15);
                     opacity: 0.7;
-                    transition: transform 0.5s , opacity 0.5s;
+                    transition: transform 0.5s, opacity 0.5s;
+
                     &:hover {
-                    transform: scale(1.03);
-                    opacity: 1;
+                        transform: scale(1.03);
+                        opacity: 1;
                     }
                 }
             }
+        }
+    }
+}
+
+.section-how-it-works {
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    h2 {
+        @include h2style;
+
+        &:after {
+            display: block;
+            height: 2px;
+            background-color: #e67e22;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+
+    .steps-box {
+        float: left;
+        padding: 0 3%;
+
+        .omnifood-app {
+            width: 40%;
+            height: auto;
+            margin-right: 0;
+            float: right;
+        }
+    }
+
+    .step-list {
+        .work-step {
+            margin-bottom: 50px;
+            font-weight: 300;
+
+            &:nth-child(3) {
+                margin-bottom: 80px;
+            }
+
+
+        }
+
+        .app-btn img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .point {
+            border: 2px solid $orange;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            padding: 5px;
+            color: $orange;
+            font-size: 150%;
+            float: left;
+            margin-right: 25px;
         }
     }
 }
