@@ -50,11 +50,13 @@ header {
 }
 
 //-----BUTTONS------------//
-.btn {
+.btn,
+input[type=submit] {
     @include btn;
 }
 
-.btn-full {
+.btn-full,
+input[type=submit] {
     background-color: $orange;
     transition: background-color 0.2s;
     margin-right: 15px;
@@ -266,7 +268,7 @@ header {
 .section-testimonials {
     padding: 80px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("img/back-customers.jpg");
+        url("/img/back-customers.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -340,6 +342,7 @@ header {
                 color: grey;
             }
         }
+
         &:last-of-type {
             text-align: center;
             border: none;
@@ -367,4 +370,102 @@ h3 {
 .plan-price-comment {
     color: grey;
     font-size: 90%;
+}
+
+.contact-form {
+    padding: 80px 0;
+        h2 {
+        @include h2style;
+    }
+}
+.form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    line-height: normal;
+}
+textarea {
+    height: 100px;
+}
+*:focus {
+    outline:none;
+}
+input[type=submit] {
+    font-size: 120%;
+}
+
+footer {
+    background: #333;
+    padding: 50px;
+    font-size: 90%;
+    color:#888;
+}
+.footer-nav,
+.footer-social {
+    list-style: none;
+}
+
+.footer-nav li,
+.footer-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav {
+    float: left;
+    margin-top:5px;
+}
+.footer-social {
+    float: right;
+    font-size:140%;
+}
+.footer-nav li a {
+    text-decoration: none;
+    color:#888;
+    transition: color .2s;
+        &:hover {
+            color:#fff;
+        }
+}
+.footer-social li a {
+    color: #888888;
+}
+.fa-facebook {
+    transition: color .2s;
+    &:hover {
+        color:#3b5998;
+    }
+}
+.fa-twitter {
+    transition: color .2s;
+
+    &:hover {
+        color: #55acee;
+    }
+}
+.fa-instagram {
+    transition: color .2s;
+
+    &:hover {
+        color: #e95950;
+    }
+}
+.fa-youtube {
+    transition: color .2s;
+
+    &:hover {
+        color: #ff0000;
+    }
+}
+.end {
+    margin-top:20px;
+    text-align: center;
 }

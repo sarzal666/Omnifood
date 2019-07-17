@@ -205,10 +205,10 @@
                         </div>
                         <div>
                             <ul>
-                            <li><i class="fas fa-check icon-small"></i> 1 meal every day</li>
-                            <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
-                            <li><i class="fas fa-check icon-small"></i> Access to newest creations</li>
-                            <li><i class="fas fa-check icon-small"></i> Free delivery</li>
+                                <li><i class="fas fa-check icon-small"></i> 1 meal every day</li>
+                                <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
+                                <li><i class="fas fa-check icon-small"></i> Access to newest creations</li>
+                                <li><i class="fas fa-check icon-small"></i> Free delivery</li>
                             </ul>
                         </div>
                         <div>
@@ -217,58 +217,118 @@
                     </div>
                 </div>
                 <div class="col span-1-of-3">
-                        <div class="plan-box">
-                            <div>
-                                <h3>Pro</h3>
-                                <p class="plan-price">149$ <span>/per month</span></p>
-                                <p class="plan-price-comment">That’s only 14.90$ per meal</p>
-                            </div>
-                            <div>
-                                <ul>
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">149$ <span>/per month</span></p>
+                            <p class="plan-price-comment">That’s only 14.90$ per meal</p>
+                        </div>
+                        <div>
+                            <ul>
                                 <li><i class="fas fa-check icon-small"></i> 1 meal 10 days/month</li>
                                 <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
                                 <li><i class="fas fa-check icon-small"></i> Access to newest creations</li>
                                 <li><i class="fas fa-check icon-small"></i> Free delivery</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a href="#" class="btn btn-ghost"> Sign up now</a>
-                            </div>
+                            </ul>
                         </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost"> Sign up now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col span-1-of-3">
-                        <div class="plan-box">
-                            <div>
-                                <h3>Starter</h3>
-                                <p class="plan-price">19$ <span>/meal</span></p>
-                                <p class="plan-price-comment">&nbsp;</p>
-                            </div>
-                            <div>
-                                <ul>
-                            <li><i class="fas fa-check icon-small"></i> 1 meal every day</li>
-                            <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
-                            <li><i class="fas fa-times icon-small"></i></li>
-                            <li><i class="fas fa-check icon-small"></i> Free delivery</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a href="#" class="btn btn-ghost"> Sign up now</a>
-                            </div>
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">19$ <span>/meal</span></p>
+                            <p class="plan-price-comment">&nbsp;</p>
                         </div>
+                        <div>
+                            <ul>
+                                <li><i class="fas fa-check icon-small"></i> 1 meal every day</li>
+                                <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
+                                <li><i class="fas fa-times icon-small"></i></li>
+                                <li><i class="fas fa-check icon-small"></i> Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost"> Sign up now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="contact-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <form method="POST" action="#" class="form">
+            <div class="row">
+                <div class="col span-1-of-3"><label for="name">Name</label></div>
+                <div class="col span-2-of-3"><input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="email">Email</label></div>
+                <div class="col span-2-of-3"><input type="email" name="email" id="email" placeholder="Your email"></div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="find-us">How did you find us?</label></div>
+                <div class="col span-2-of-3"><select name="find-us" id="find-us">
+                        <option value="friends" selected>Friends</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select></div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="news">Newsletter?</label></div>
+                <div class="col span-2-of-3"><input type="checkbox" name="news" id="news" checked> Yes, please</div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="message">Drop us a line</label></div>
+                <div class="col span-2-of-3"><textarea name="message" id="messege"></textarea></div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="submit">&nbsp;</label></div>
+                <div class="col span-2-of-3"><input type="submit" name="submit" id="submit" value="Send it!"></div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="row">
+            <ul class="footer-nav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">iOS App</a></li>
+                <li><a href="#">Android App</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p class="end">Build in the Twierdza Modlin, Poland, July 2019.</p>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
 
 </html>
 <!--
+Section 7: Contact form
+Title: We're happy to hear from you
 
-Plan 3: Starter
-19$ per meal
-1 meal
-Order from 8 am to 12 pm
-Free delivery
+Fields to include:
+Name
+Email
+How did you find us?
+Newsletter
+Drop us a line
  -->
