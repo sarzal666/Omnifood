@@ -20,6 +20,7 @@
 html {
   background-color: #fff;
   font-size: 20px;
+  font-weight: 300;
   color: #000;
   font-family: 'Lato', sans-serif;
   text-rendering: optimizeLegibility;
@@ -52,7 +53,8 @@ header {
   margin-bottom: 20px;
 }
 
-.header-text-box .btn {
+.btn {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   font-weight: 300;
@@ -61,24 +63,24 @@ header {
   border-radius: 200px;
 }
 
-.header-text-box .btn-full {
+.btn-full {
   background-color: #e67e22;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   margin-right: 15px;
 }
 
-.header-text-box .btn-full:hover {
+.btn-full:hover {
   background-color: #cf6d17;
 }
 
-.header-text-box .btn-ghost {
+.btn-ghost {
   color: #e67e22;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
 }
 
-.header-text-box .btn-ghost:hover {
+.btn-ghost:hover {
   background-color: #cf6d17;
   color: #fff;
 }
@@ -154,13 +156,12 @@ header {
 }
 
 .section-features h3 {
-  text-align: center;
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 110%;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section-features .long-copy {
@@ -213,7 +214,7 @@ header {
 }
 
 .section-how-it-works {
-  padding: 20px 0;
+  padding: 80px 0;
   background-color: #f4f4f4;
 }
 
@@ -278,7 +279,7 @@ header {
 }
 
 .section-cities {
-  padding: 20px 0;
+  padding: 80px 0;
 }
 
 .section-cities h2 {
@@ -309,20 +310,19 @@ header {
 }
 
 .section-cities .city-box h3 {
-  text-align: center;
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 110%;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section-cities .city-box .city-features {
   font-weight: 300;
 }
 
-.section-cities .city-box .city-features .icon-small {
+.icon-small {
   color: #e67e22;
   width: 30px;
   display: inline-block;
@@ -330,5 +330,140 @@ header {
   text-align: center;
   margin-top: -8px;
   margin-right: 20px;
+}
+
+.section-testimonials {
+  padding: 80px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/img/back-customers.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/back-customers.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.section-testimonials .row h2 {
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.section-testimonials .row h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section-testimonials .row .col blockquote {
+  font-style: italic;
+  font-weight: 300;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.section-testimonials .row .col blockquote:before {
+  content: "\0022";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -25px;
+}
+
+.section-testimonials .row .col blockquote cite {
+  display: block;
+  margin-top: 25px;
+  font-size: 90%;
+}
+
+.section-testimonials .row .col blockquote cite img {
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.section-sign-up {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+}
+
+.section-sign-up .row h2 {
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.section-sign-up .row h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.plan-box {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div ul {
+  list-style: none;
+}
+
+.plan-box div ul li {
+  padding: 5px;
+  color: grey;
+}
+
+.plan-box div:last-of-type {
+  text-align: center;
+  border: none;
+}
+
+h3 {
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 110%;
+  font-weight: 300;
+}
+
+.plan-price {
+  color: #e67e22;
+  font-size: 400%;
+}
+
+.plan-price span {
+  font-size: 25%;
+}
+
+.plan-price-comment {
+  color: grey;
+  font-size: 90%;
 }
 /*# sourceMappingURL=style.css.map */

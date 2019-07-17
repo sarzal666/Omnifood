@@ -23,6 +23,7 @@
 html {
     background-color: #fff;
     font-size: 20px;
+    font-weight: 300;
     color: #000;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility;
@@ -46,29 +47,30 @@ header {
         @include h1style;
         margin-bottom: 20px;
     }
+}
 
-    .btn {
-        @include btn;
+//-----BUTTONS------------//
+.btn {
+    @include btn;
+}
+
+.btn-full {
+    background-color: $orange;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+
+    &:hover {
+        background-color: $darkorange;
     }
+}
 
-    .btn-full {
-        background-color: $orange;
-        transition: background-color 0.2s;
-        margin-right: 15px;
+.btn-ghost {
+    color: $orange;
+    transition: background-color .2s;
 
-        &:hover {
-            background-color: $darkorange;
-        }
-    }
-
-    .btn-ghost {
-        color: $orange;
-        transition: background-color .2s;
-
-        &:hover {
-            background-color: $darkorange;
-            color: #fff;
-        }
+    &:hover {
+        background-color: $darkorange;
+        color: #fff;
     }
 }
 
@@ -172,7 +174,7 @@ header {
 }
 
 .section-how-it-works {
-    padding: 20px 0;
+    padding: 80px 0;
     background-color: #f4f4f4;
 
     h2 {
@@ -225,7 +227,7 @@ header {
 }
 
 .section-cities {
-    padding: 20px 0;
+    padding: 80px 0;
 
     h2 {
         @include h2style;
@@ -242,19 +244,127 @@ header {
         h3 {
             @include h3style;
         }
+
         .city-features {
             font: {
                 weight: 300;
             }
-            .icon-small {
-                color: $orange;
-                width:30px;
-                display: inline-block;
-                vertical-align: middle;
-                text-align: center;
-                margin-top:-8px;
-                margin-right:20px;
+        }
+    }
+}
+
+.icon-small {
+    color: $orange;
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -8px;
+    margin-right: 20px;
+}
+
+.section-testimonials {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("/img/back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+    .row {
+        h2 {
+            @include h2style;
+        }
+
+        .col {
+            blockquote {
+                font-style: italic;
+                font-weight: 300;
+                line-height: 145%;
+                position: relative;
+                margin-top: 40px;
+
+                &:before {
+                    content: "\0022";
+                    font-size: 500%;
+                    display: block;
+                    position: absolute;
+                    top: -20px;
+                    left: -25px;
+                }
+
+                cite {
+                    display: block;
+                    margin-top: 25px;
+                    font-size: 90%;
+
+                    img {
+                        height: 50px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
             }
         }
     }
+}
+
+.section-sign-up {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+
+    .row {
+        h2 {
+            @include h2style;
+        }
+    }
+}
+
+.plan-box {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #efefef;
+
+    div {
+        background-color: #fff;
+        padding: 15px;
+        border-bottom: 1px solid #e8e8e8;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 5px;
+                color: grey;
+            }
+        }
+        &:last-of-type {
+            text-align: center;
+            border: none;
+        }
+    }
+}
+
+
+h3 {
+    @include h3style;
+}
+
+.plan-price {
+    color: $orange;
+
+    font: {
+        size: 400%;
+    }
+
+    span {
+        font-size: 25%;
+    }
+}
+
+.plan-price-comment {
+    color: grey;
+    font-size: 90%;
 }
