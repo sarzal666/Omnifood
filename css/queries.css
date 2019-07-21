@@ -80,6 +80,7 @@
         .section-how-it-works .steps-box .omnifood-app {
             float: none;
             width: 35%;
+            height: auto;
         }
         .section-how-it-works .steps-box {
             display: flex;
