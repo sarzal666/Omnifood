@@ -17,6 +17,10 @@
           box-sizing: border-box;
 }
 
+.section-padding {
+  padding: 80px 0;
+}
+
 html {
   background-color: #fff;
   font-size: 20px;
@@ -24,6 +28,7 @@ html {
   color: #000;
   font-family: 'Lato', sans-serif;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 header {
@@ -126,10 +131,6 @@ input[type=submit]:hover {
   border-bottom: 2px solid #e67e22;
 }
 
-.section-features {
-  padding: 80px 0;
-}
-
 .section-features h2 {
   word-spacing: 2px;
   text-align: center;
@@ -159,6 +160,7 @@ input[type=submit]:hover {
 }
 
 .section-features h3 {
+  text-align: center;
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: uppercase;
@@ -172,13 +174,17 @@ input[type=submit]:hover {
   margin: 0 auto;
   margin-bottom: 35px;
   line-height: 145%;
+  text-align: center;
 }
 
 .section-features .box {
-  text-align: justify;
   line-height: 145%;
   font-weight: 300;
   font-size: 90%;
+}
+
+.section-features .box p {
+  text-align: justify;
 }
 
 .section-meals .meals-showcase {
@@ -217,7 +223,6 @@ input[type=submit]:hover {
 }
 
 .section-how-it-works {
-  padding: 80px 0;
   background-color: #f4f4f4;
 }
 
@@ -281,8 +286,13 @@ input[type=submit]:hover {
   margin-right: 25px;
 }
 
-.section-cities {
-  padding: 80px 0;
+.app-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-cities h2 {
@@ -313,6 +323,7 @@ input[type=submit]:hover {
 }
 
 .section-cities .city-box h3 {
+  text-align: center;
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: uppercase;
@@ -336,7 +347,6 @@ input[type=submit]:hover {
 }
 
 .section-testimonials {
-  padding: 80px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/img/back-customers.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/back-customers.jpg");
   background-size: cover;
@@ -395,7 +405,6 @@ input[type=submit]:hover {
 }
 
 .section-sign-up {
-  padding: 80px 0;
   background-color: #f4f4f4;
 }
 
@@ -447,7 +456,12 @@ input[type=submit]:hover {
   border: none;
 }
 
+.empty {
+  display: none;
+}
+
 h3 {
+  text-align: center;
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: uppercase;
@@ -458,6 +472,7 @@ h3 {
 
 .plan-price {
   color: #e67e22;
+  text-align: center;
   font-size: 400%;
 }
 
@@ -524,7 +539,7 @@ input[type=submit] {
 
 footer {
   background: #333;
-  padding: 50px;
+  padding: 30px 0;
   font-size: 90%;
   color: #888;
 }

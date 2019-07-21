@@ -8,6 +8,7 @@
     <title>Omnifood</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 </head>
@@ -26,12 +27,12 @@
             </div>
         </nav>
         <div class="header-text-box">
-            <h1>Good bye junk food.<br>Hello super healthy meals.</h1>
+            <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
             <a href="#" class="btn btn-full">I'm hungry</a>
             <a href="#" class="btn btn-ghost">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-padding section-features">
         <div class="row">
             <h2>get food fast - not fast food</h2>
             <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always
@@ -98,7 +99,7 @@
             </li>
         </ul>
     </section>
-    <section class="section-how-it-works">
+    <section class="section-padding section-how-it-works">
         <div class="row">
             <h2>How it works &mdash; simple as 1, 2, 3 </h2>
         </div>
@@ -119,14 +120,16 @@
                         <div class="point">3</div>
                         <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
                     </div>
-                    <a href="#" class="app-btn"><img src="img/download-app.svg" alt="download ios app button"></a>
-                    <a href="#" class="app-btn"><img src="img/download-app-android.png"
-                            alt="download android app button"></a>
+                    <div class="app-btns-container">
+                        <a href="#" class="app-btn"><img src="img/download-app.svg" alt="download ios app button"></a>
+                        <a href="#" class="app-btn"><img src="img/download-app-android.png"
+                                alt="download android app button"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-cities">
+    <section class="section-padding section-cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -134,34 +137,42 @@
             <div class="col span-1-of-4 city-box">
                 <img src="img/lisbon-3.jpg" alt="city of Lisbon">
                 <h3>Lisbon</h3>
-                <div class="city-features"><i class="fas fa-user icon-small"></i>1600+ happy eaters</div>
-                <div class="city-features"><i class="fas fa-star icon-small"></i>60+ top chefs</div>
-                <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_lx</div>
+                <div class="flex-align">
+                    <div class="city-features"><i class="fas fa-user icon-small"></i>1600+ happy eaters</div>
+                    <div class="city-features"><i class="fas fa-star icon-small"></i>60+ top chefs</div>
+                    <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_lx</div>
+                </div>
             </div>
             <div class="col span-1-of-4 city-box">
                 <img src="img/san-francisco.jpg" alt="city of San Francisco">
                 <h3>San Francisco</h3>
-                <div class="city-features"><i class="fas fa-user icon-small"></i>3700+ happy eaters</div>
-                <div class="city-features"><i class="fas fa-star icon-small"></i>160+ top chefs</div>
-                <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_sf</div>
+                <div class="flex-align">
+                    <div class="city-features"><i class="fas fa-user icon-small"></i>3700+ happy eaters</div>
+                    <div class="city-features"><i class="fas fa-star icon-small"></i>160+ top chefs</div>
+                    <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_sf</div>
+                </div>
             </div>
             <div class="col span-1-of-4 city-box">
                 <img src="img/berlin.jpg" alt="city of Berlin">
                 <h3>Berlin</h3>
-                <div class="city-features"><i class="fas fa-user icon-small"></i>2300+ happy eaters</div>
-                <div class="city-features"><i class="fas fa-star icon-small"></i>110+ top chefs</div>
-                <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_berlin</div>
+                <div class="flex-align">
+                    <div class="city-features"><i class="fas fa-user icon-small"></i>2300+ happy eaters</div>
+                    <div class="city-features"><i class="fas fa-star icon-small"></i>110+ top chefs</div>
+                    <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_berlin</div>
+                </div>
             </div>
             <div class="col span-1-of-4 city-box">
                 <img src="img/london.jpg" alt="city of London">
                 <h3>London</h3>
-                <div class="city-features"><i class="fas fa-user icon-small"></i>1200+ happy eaters</div>
-                <div class="city-features"><i class="fas fa-star icon-small"></i>50+ top chefs</div>
-                <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_london</div>
+                <div class="flex-align">
+                    <div class="city-features"><i class="fas fa-user icon-small"></i>1200+ happy eaters</div>
+                    <div class="city-features"><i class="fas fa-star icon-small"></i>50+ top chefs</div>
+                    <div class="city-features"><i class="fab fa-twitter icon-small"></i>@omnifood_london</div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-padding section-testimonials">
         <div class="row">
             <h2>Our customers can't live without us</h2>
         </div>
@@ -192,7 +203,7 @@
             </div>
         </div>
     </section>
-    <section class="section-sign-up">
+    <section class="section-padding section-sign-up">
         <div class="row">
             <h2>Start eating healthy today</h2>
             <div class="row">
@@ -200,10 +211,10 @@
                     <div class="plan-box">
                         <div>
                             <h3>Premium</h3>
-                            <p class="plan-price">399$ <span>/per month</span></p>
+                            <p class="plan-price">399$ <span>/month</span></p>
                             <p class="plan-price-comment">That’s only 13.30$ per meal</p>
                         </div>
-                        <div>
+                        <div class="options-align">
                             <ul>
                                 <li><i class="fas fa-check icon-small"></i> 1 meal every day</li>
                                 <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
@@ -220,10 +231,10 @@
                     <div class="plan-box">
                         <div>
                             <h3>Pro</h3>
-                            <p class="plan-price">149$ <span>/per month</span></p>
+                            <p class="plan-price">149$ <span>/month</span></p>
                             <p class="plan-price-comment">That’s only 14.90$ per meal</p>
                         </div>
-                        <div>
+                        <div class="options-align">
                             <ul>
                                 <li><i class="fas fa-check icon-small"></i> 1 meal 10 days/month</li>
                                 <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
@@ -243,11 +254,11 @@
                             <p class="plan-price">19$ <span>/meal</span></p>
                             <p class="plan-price-comment">&nbsp;</p>
                         </div>
-                        <div>
+                        <div class="options-align">
                             <ul>
                                 <li><i class="fas fa-check icon-small"></i> 1 meal every day</li>
                                 <li><i class="fas fa-check icon-small"></i> Order 24/7</li>
-                                <li><i class="fas fa-times icon-small"></i></li>
+                                <li><i class="fas fa-times icon-small"></i>&nbsp;</li>
                                 <li><i class="fas fa-check icon-small"></i> Free delivery</li>
                             </ul>
                         </div>
@@ -259,7 +270,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-form">
+    <section class="section-padding contact-form">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -298,19 +309,23 @@
     </section>
     <footer>
         <div class="row">
-            <ul class="footer-nav">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">iOS App</a></li>
-                <li><a href="#">Android App</a></li>
-            </ul>
-            <ul class="footer-social">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul>
+            <div class="center">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
         </div>
         <div class="row">
             <p class="end">Build in the Twierdza Modlin, Poland, July 2019.</p>

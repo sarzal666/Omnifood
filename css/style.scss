@@ -19,6 +19,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.section-padding {
+    padding: 80px 0;
+}
 
 html {
     background-color: #fff;
@@ -27,6 +30,7 @@ html {
     color: #000;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 header {
@@ -104,7 +108,6 @@ input[type=submit] {
 }
 
 .section-features {
-    padding: 80px 0;
 
     h2 {
         @include h2style;
@@ -127,15 +130,18 @@ input[type=submit] {
         margin: 0 auto;
         margin-bottom: 35px;
         line-height: 145%;
+        text-align: center;
     }
 
     .box {
-        text-align: justify;
         line-height: 145%;
 
         font: {
             weight: 300;
             size: 90%;
+        }
+        p {
+            text-align: justify;
         }
 
     }
@@ -176,7 +182,6 @@ input[type=submit] {
 }
 
 .section-how-it-works {
-    padding: 80px 0;
     background-color: #f4f4f4;
 
     h2 {
@@ -227,9 +232,12 @@ input[type=submit] {
         }
     }
 }
+.app-btns-container {
+    display: flex;
+    justify-content: center;
+}
 
 .section-cities {
-    padding: 80px 0;
 
     h2 {
         @include h2style;
@@ -266,7 +274,6 @@ input[type=submit] {
 }
 
 .section-testimonials {
-    padding: 80px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("/img/back-customers.jpg");
     background-size: cover;
@@ -313,7 +320,6 @@ input[type=submit] {
 }
 
 .section-sign-up {
-    padding: 80px 0;
     background-color: #f4f4f4;
 
     .row {
@@ -349,6 +355,9 @@ input[type=submit] {
         }
     }
 }
+.empty {
+    display: none;
+}
 
 
 h3 {
@@ -357,6 +366,7 @@ h3 {
 
 .plan-price {
     color: $orange;
+    text-align: center;
 
     font: {
         size: 400%;
@@ -405,7 +415,7 @@ input[type=submit] {
 
 footer {
     background: #333;
-    padding: 50px;
+    padding: 30px 0;
     font-size: 90%;
     color:#888;
 }
