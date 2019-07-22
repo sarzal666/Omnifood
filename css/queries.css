@@ -2,8 +2,8 @@
     .header-text-box {
         width: 80%;
         position: absolute;
-        top: 60%;
-        left: 53%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
     .row {
@@ -149,5 +149,8 @@
         .center {
             display: flex;
             justify-content: center;
+        }
+        .section-testimonials .row .col blockquote:before {
+            left: -12px;
         }
 }
