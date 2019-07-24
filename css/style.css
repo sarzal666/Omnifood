@@ -99,24 +99,25 @@ input[type=submit]:hover {
 }
 
 .row .logo {
+  display: initial;
   height: 100px;
   width: auto;
   float: left;
   margin-top: 20px;
 }
 
-.row .main-nav {
+.main-nav {
   list-style: none;
   margin-top: 55px;
   float: right;
 }
 
-.row .main-nav li {
+.main-nav li {
   display: inline-block;
   margin-left: 40px;
 }
 
-.row .main-nav li a {
+.main-nav li a {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
@@ -127,8 +128,54 @@ input[type=submit]:hover {
   transition: border-bottom .2s;
 }
 
-.row .main-nav li a:hover {
+.main-nav li a:hover {
   border-bottom: 2px solid #e67e22;
+}
+
+.logo-black {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: initial;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+}
+
+.sticky .main-nav {
+  margin-top: 15px;
+}
+
+.sticky .main-nav li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 18px 0;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom .2s;
+  transition: border-bottom .2s;
+}
+
+.sticky .main-nav li a:hover {
+  border-bottom: 3px solid #e67e22;
 }
 
 .section-features h2 {
